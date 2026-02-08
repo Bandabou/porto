@@ -37,7 +37,7 @@
 }
 
 .logoImage {
-  max-height: 70px; /* prevents logo from getting too tall */
+  max-height: 50px; /* prevents logo from getting too tall */
   width: auto;      /* keeps original aspect ratio */
   object-fit: contain;
 }
