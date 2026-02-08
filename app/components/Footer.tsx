@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className={styles.footerGrid}>
           <div className={styles.footerColumn}>
-            <div className={styles.footerLogo}>Atelier</div>
+            <div className={styles.footerLogo}>DeepReef design</div>
             <p className={styles.footerAddress}>
               Design Studio<br />
               Amsterdam, Netherlands
@@ -27,7 +27,7 @@ export default function Footer() {
           <div className={styles.footerColumn}>
             <h4 className={styles.footerHeading}>Contact</h4>
             <a href="mailto:hello@atelier.studio" className={styles.footerLink}>
-              hello@atelier.studio
+              deepreef@gmail.com
             </a>
             <a href="tel:+31207741222" className={styles.footerLink}>
               +31 20 774 1222
