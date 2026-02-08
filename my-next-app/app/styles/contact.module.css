@@ -1,0 +1,51 @@
+.contactSection {
+  padding: 8rem 3rem;
+  background: #000000; /* dark black background */
+}
+
+.contactContainer {
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactTitle {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  color: #ffffff; /* white text */
+}
+
+.contactDescription {
+  font-size: 1.125rem;
+  color: #d1d5db; /* soft white */
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.contactButtonWrapper {
+  padding-top: 1rem;
+}
+
+.contactButton {
+  display: inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+.italic {
+  font-style: italic;
+}

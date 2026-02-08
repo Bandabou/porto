@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden;
+  background: #f9f9f9;
+  color: #111827;
+}
+
+/* Typography */
+.serif-display,
+.logo,
+.hero-title,
+.service-title,
+.portfolio-title,
+.portfolio-item-title,
+.contact-title,
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.sans-body,
+.hero-subtitle,
+.hero-description,
+.nav-link,
+.service-number,
+.service-description,
+.portfolio-subtitle,
+.portfolio-category,
+.portfolio-description,
+.contact-description,
+.contact-button,
+.footer-address,
+.footer-heading,
+.footer-link,
+.footer-copyright,
+.footer-legal-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.italic { font-style: italic; }

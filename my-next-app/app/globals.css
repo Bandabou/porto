@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --foreground-rgb: 255, 255, 255;       /* white text */
+  --background-start-rgb: 17, 17, 17;    /* black background start */
+  --background-end-rgb: 17, 17, 17;      /* black background end */
+  --accent-teal: 0, 180, 216;            /* blue accent */
+  --accent-coral: 255, 107, 107;         /* hover accent */
+}
+
+/* ===== GLOBAL BODY STYLES ===== */
+body {
+  font-family: var(--font-inter), sans-serif; /* clean sans-serif body */
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-lora), serif; /* luxurious headings */
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--foreground-rgb));
+}
+
+h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
+h2 { font-size: clamp(2rem, 5vw, 4rem); }
+h3 { font-size: clamp(1.75rem, 4vw, 3rem); }
+h4 { font-size: clamp(1.5rem, 3.5vw, 2.5rem); }
+h5 { font-size: clamp(1.25rem, 3vw, 2rem); }
+h6 { font-size: clamp(1rem, 2.5vw, 1.5rem); }
+
+/* ===== PARAGRAPHS ===== */
+p {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(var(--foreground-rgb));
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: rgb(var(--accent-teal));
+  transition: color 0.3s ease;
+}
+
+/* a:hover {
+  color: rgb(var(--accent-coral));
+} */
+
+/* ===== LISTS ===== */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== TAILWIND BASE OVERRIDES ===== */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+}

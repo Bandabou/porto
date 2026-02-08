@@ -1,0 +1,128 @@
+/* ===== HERO SECTION ===== */
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  background-color: transparent;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ===== LEFT SIDE TEXT ===== */
+.heroText {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 1;
+}
+
+/* Big catchy text */
+.heroCatchy {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+/* Subtitle */
+.heroSubtitle {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* CTA button */
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: #00b4d8;
+  text-decoration: none;
+  position: relative;
+}
+
+/* underline effect */
+.linkUnderline {
+  position: relative;
+}
+
+.linkUnderline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background-color: #00b4d8;
+  transition: width 0.3s ease;
+}
+
+.heroCta:hover .linkUnderline::after {
+  width: 100%;
+}
+
+.arrowIcon {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.heroCta:hover .arrowIcon {
+  transform: translateX(0.25rem);
+}
+
+/* ===== RIGHT SIDE ANIMATION ===== */
+.heroAnimation {
+  flex: 1 1 400px;
+  max-width: 600px;
+  z-index: 0;
+}
+
+/* ===== ANIMATIONS ===== */
+.fadeInUp {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.stagger2 { animation-delay: 1.5s; } /* starts after shark animation begins */
+.stagger3 { animation-delay: 2s; }
+.stagger4 { animation-delay: 2.5s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroText, .heroAnimation {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .heroCatchy {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    text-align: center;
+  }
+  .heroSubtitle {
+    text-align: center;
+  }
+}
