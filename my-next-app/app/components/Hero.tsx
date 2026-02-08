@@ -7,6 +7,7 @@ import SharkAnimation from '@/app/assets/Shark.json';
 
 interface HeroProps {
   isLoaded: boolean;
+  scrollY: number;
 }
 
 export default function Hero({ isLoaded }: HeroProps) {
