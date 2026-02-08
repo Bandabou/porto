@@ -5,6 +5,8 @@ import styles from '../styles/hero.module.css';
 import Lottie from 'lottie-react';
 import SharkAnimation from '@/app/assets/Shark.json';
 
+// Interface and states
+
 interface HeroProps {
   isLoaded: boolean;
   scrollY: number;
