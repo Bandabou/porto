@@ -21,14 +21,27 @@ export default function HomePage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Dynamically set CSS variable for navbar height
+  useEffect(() => {
+    const nav = document.querySelector("nav");
+    if (nav) {
+      const height = nav.getBoundingClientRect().height;
+      document.documentElement.style.setProperty("--nav-height", `${height}px`);
+    }
+  }, [isLoaded]);
+
   return (
     <>
       <Navbar isLoaded={isLoaded} />
-      <Hero isLoaded={isLoaded} scrollY={scrollY} />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Footer />
+
+      {/* Wrapper to push content below navbar */}
+      <main className="pageWrapper">
+        <Hero isLoaded={isLoaded} scrollY={scrollY} />
+        <Services />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }

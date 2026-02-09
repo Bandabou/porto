@@ -76,3 +76,26 @@ ul, ol {
     box-sizing: border-box;
   }
 }
+
+
+/* ===== NAVBAR OFFSET ===== */
+:root {
+  --nav-height: 120px; /* fallback if JS hasn't run yet */
+}
+
+/* Push page content below navbar */
+.pageWrapper {
+  padding-top: var(--nav-height);
+}
+
+/* Anchor links scroll correctly under navbar */
+#work,
+#services,
+#contact {
+  scroll-margin-top: var(--nav-height);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
