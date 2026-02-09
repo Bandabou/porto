@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className={styles.footerGrid}>
           <div className={styles.footerColumn}>
-            <div className={styles.footerLogo}>DeepReef design</div>
+            <h3 className={styles.footerLogo}>DeepReef Design</h3>
             <p className={styles.footerAddress}>
               Design Studio<br />
               Amsterdam, Netherlands
