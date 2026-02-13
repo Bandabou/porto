@@ -3,21 +3,24 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* move content to the top */
   justify-content: center;
-  padding: 2rem 3rem;
+  padding: 10rem 3rem; /* increase top padding to control spacing */
   background-color: transparent;
 }
+
 
 .heroContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1280px; /* match navbar */
   width: 100%;
   gap: 2rem;
   flex-wrap: wrap;
+  margin: 0 auto; /* centers container horizontally */
 }
+
 
 /* ===== LEFT SIDE TEXT ===== */
 .heroText {
@@ -41,7 +44,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* CTA button */

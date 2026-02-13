@@ -9,7 +9,7 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem 3rem; /* more breathing room */
+  padding: 1rem 3rem; /* more breathing room */
   transition: background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
   transform: scale(1);
 }
@@ -37,7 +37,7 @@
 }
 
 .logoImage {
-  max-height: 50px; /* prevents logo from getting too tall */
+  max-height: 60px; /* prevents logo from getting too tall */
   width: auto;      /* keeps original aspect ratio */
   object-fit: contain;
 }
