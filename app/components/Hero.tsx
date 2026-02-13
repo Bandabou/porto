@@ -23,7 +23,7 @@ export default function Hero({ isLoaded }: HeroProps) {
           {/* Big catchy text */}
           <div className={`${styles.fadeInUp} ${styles.stagger2}`}>
             <h1 className={styles.heroCatchy}>
-              We dive deep for amazing design
+              We dive deep for amazing web design
             </h1>
           </div>
 

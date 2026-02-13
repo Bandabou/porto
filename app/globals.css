@@ -8,14 +8,15 @@
   --background-start-rgb: 17, 17, 17;    /* black background start */
   --background-end-rgb: 17, 17, 17;      /* black background end */
   --accent-teal: 0, 180, 216;            /* blue accent */
-  --accent-coral: 255, 107, 107;         /* hover accent */
+  --accent-coral: 255, 107, 107; 
+  --Text-color-base:0,0,0;        /* hover accent */
 }
 
 /* ===== GLOBAL BODY STYLES ===== */
 body {
   font-family: var(--font-inter), sans-serif; /* clean sans-serif body */
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-start-rgb));
+  color: black;
+  background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   scroll-behavior: smooth;
   min-height: 100vh;

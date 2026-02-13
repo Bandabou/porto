@@ -13,12 +13,12 @@
 
 .portfolioTitle {
   font-size: clamp(3rem, 5vw, 4rem);
-  color: #ffffff;
+  color: #151515;
   margin-bottom: 1rem;
 }
 
 .portfolioSubtitle {
-  color: #d1d5db;
+  color: #444444;
   max-width: 36rem;
 }
 
@@ -103,17 +103,17 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: #252525;
 }
 
 .portfolioItemTitle {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
-  color: #ffffff;
+  color: #282828;
 }
 
 .portfolioDescription {
-  color: #d1d5db;
+  color: #565656;
   line-height: 1.6;
 }
 

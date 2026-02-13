@@ -1,6 +1,6 @@
 .servicesSection {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding: 4rem 3rem;
   margin: 6rem 0;
 }
@@ -26,16 +26,16 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #9ca3af; /* light gray for dark theme */
+  color: #7c7c7c; /* light gray for dark theme */
 }
 
 .serviceTitle {
   font-size: 1.875rem;
-  color: #ffffff; /* white title for dark background */
+  color: #161616; /* white title for dark background */
 }
 
 .serviceDescription {
   font-size: 0.875rem;
   line-height: 1.6;
-  color: #d1d5db; /* soft white text */
+  color: #303030; /* soft white text */
 }
