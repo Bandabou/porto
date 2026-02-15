@@ -18,7 +18,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Deepreef Design",
+  title: "Northfin Studio",
   description: "Crafting refined digital experiences",
 };
 

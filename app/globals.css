@@ -9,13 +9,13 @@
   --background-end-rgb: 17, 17, 17;      /* black background end */
   --accent-teal: 0, 180, 216;            /* blue accent */
   --accent-coral: 255, 107, 107; 
-  --Text-color-base:0,0,0;        /* hover accent */
+  --header-text:4,4,4;        /* hover accent */
 }
 
 /* ===== GLOBAL BODY STYLES ===== */
 body {
   font-family: var(--font-inter), sans-serif; /* clean sans-serif body */
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   scroll-behavior: smooth;
