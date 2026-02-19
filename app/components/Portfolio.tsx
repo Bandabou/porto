@@ -86,7 +86,7 @@ export default function Portfolio() {
                       target="_blank"                // open in new tab
                       rel="noopener noreferrer"      // security for external links
                     >
-                      <span>View Case Study</span>
+                      <span className={styles.linkUnderline}>View Case Study</span>
                       <svg
                         className={styles.arrowDiagonal}
                         fill="none"

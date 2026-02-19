@@ -4,12 +4,17 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --foreground-rgb: 255, 255, 255;       /* white text */
+  --foreground-rgb: 60, 75, 112;       /* white text */
   --background-start-rgb: 17, 17, 17;    /* black background start */
   --background-end-rgb: 17, 17, 17;      /* black background end */
   --accent-teal: 0, 180, 216;            /* blue accent */
   --accent-coral: 255, 107, 107; 
-  --header-text:4,4,4;        /* hover accent */
+  --header-text: 17, 53, 88;        /* hover accent */
+  --header-sub-text: 52, 67, 104; 
+  --descrip-text: 48, 48, 48; 
+  --link-color: 20, 134, 160; 
+  --link-underline: 80, 170, 202; 
+
 }
 
 /* ===== GLOBAL BODY STYLES ===== */
@@ -35,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
-  color: rgb(var(--foreground-rgb));
+
 }
 
 h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
